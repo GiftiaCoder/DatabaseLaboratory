@@ -1,0 +1,34 @@
+11744:X 25 Mar 16:53:48.280 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+11744:X 25 Mar 16:53:48.280 # Redis version=4.0.8, bits=64, commit=00000000, modified=0, pid=11744, just started
+11744:X 25 Mar 16:53:48.280 # Configuration loaded
+11745:X 25 Mar 16:53:48.280 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+11745:X 25 Mar 16:53:48.281 * Running mode=sentinel, port=12580.
+11745:X 25 Mar 16:53:48.281 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+11745:X 25 Mar 16:53:48.281 # Sentinel ID is 2f0c73b64cbe451defe98828815695ecd6272661
+11745:X 25 Mar 16:53:48.281 # +monitor master mymaster 127.0.0.1 8088 quorum 2
+11745:X 25 Mar 16:53:58.316 * +convert-to-slave slave 127.0.0.1:8086 127.0.0.1 8086 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.576 # +sdown master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.635 # +odown master mymaster 127.0.0.1 8088 #quorum 2/2
+11745:X 25 Mar 17:00:05.635 # +new-epoch 2
+11745:X 25 Mar 17:00:05.635 # +try-failover master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.636 # +vote-for-leader 2f0c73b64cbe451defe98828815695ecd6272661 2
+11745:X 25 Mar 17:00:05.638 # dc7e62118f13de1fc4bbb6f7aaede006b0535794 voted for 2f0c73b64cbe451defe98828815695ecd6272661 2
+11745:X 25 Mar 17:00:05.638 # cef9b6c5f3d05ec465c6382055671487640f589b voted for 2f0c73b64cbe451defe98828815695ecd6272661 2
+11745:X 25 Mar 17:00:05.713 # +elected-leader master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.713 # +failover-state-select-slave master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.779 # +selected-slave slave 127.0.0.1:8086 127.0.0.1 8086 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.779 * +failover-state-send-slaveof-noone slave 127.0.0.1:8086 127.0.0.1 8086 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:05.837 * +failover-state-wait-promotion slave 127.0.0.1:8086 127.0.0.1 8086 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:06.795 # +promoted-slave slave 127.0.0.1:8086 127.0.0.1 8086 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:06.795 # +failover-state-reconf-slaves master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:06.858 * +slave-reconf-sent slave 127.0.0.1:8087 127.0.0.1 8087 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:07.839 # -odown master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:07.839 * +slave-reconf-inprog slave 127.0.0.1:8087 127.0.0.1 8087 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:07.839 * +slave-reconf-done slave 127.0.0.1:8087 127.0.0.1 8087 @ mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:07.894 # +failover-end master mymaster 127.0.0.1 8088
+11745:X 25 Mar 17:00:07.894 # +switch-master mymaster 127.0.0.1 8088 127.0.0.1 8086
+11745:X 25 Mar 17:00:07.895 * +slave slave 127.0.0.1:8087 127.0.0.1 8087 @ mymaster 127.0.0.1 8086
+11745:X 25 Mar 17:00:07.895 * +slave slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086
+11745:X 25 Mar 17:00:37.945 # +sdown slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086
+11745:X 25 Mar 17:02:12.142 # -sdown slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086
+11745:X 25 Mar 17:02:22.120 * +convert-to-slave slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086

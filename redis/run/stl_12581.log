@@ -1,0 +1,19 @@
+11749:X 25 Mar 16:53:50.880 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+11749:X 25 Mar 16:53:50.880 # Redis version=4.0.8, bits=64, commit=00000000, modified=0, pid=11749, just started
+11749:X 25 Mar 16:53:50.880 # Configuration loaded
+11750:X 25 Mar 16:53:50.881 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+11750:X 25 Mar 16:53:50.881 * Running mode=sentinel, port=12581.
+11750:X 25 Mar 16:53:50.881 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+11750:X 25 Mar 16:53:50.881 # Sentinel ID is cef9b6c5f3d05ec465c6382055671487640f589b
+11750:X 25 Mar 16:53:50.881 # +monitor master mymaster 127.0.0.1 8088 quorum 2
+11750:X 25 Mar 17:00:05.637 # +new-epoch 2
+11750:X 25 Mar 17:00:05.638 # +vote-for-leader 2f0c73b64cbe451defe98828815695ecd6272661 2
+11750:X 25 Mar 17:00:05.646 # +sdown master mymaster 127.0.0.1 8088
+11750:X 25 Mar 17:00:05.704 # +odown master mymaster 127.0.0.1 8088 #quorum 3/2
+11750:X 25 Mar 17:00:05.705 # Next failover delay: I will not start a failover before Sun Mar 25 17:06:06 2018
+11750:X 25 Mar 17:00:06.858 # +config-update-from sentinel 2f0c73b64cbe451defe98828815695ecd6272661 127.0.0.1 12580 @ mymaster 127.0.0.1 8088
+11750:X 25 Mar 17:00:06.858 # +switch-master mymaster 127.0.0.1 8088 127.0.0.1 8086
+11750:X 25 Mar 17:00:06.858 * +slave slave 127.0.0.1:8087 127.0.0.1 8087 @ mymaster 127.0.0.1 8086
+11750:X 25 Mar 17:00:06.858 * +slave slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086
+11750:X 25 Mar 17:00:36.879 # +sdown slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086
+11750:X 25 Mar 17:02:12.222 # -sdown slave 127.0.0.1:8088 127.0.0.1 8088 @ mymaster 127.0.0.1 8086
